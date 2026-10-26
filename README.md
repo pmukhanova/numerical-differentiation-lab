@@ -218,36 +218,5 @@ $$\frac32-\frac35\cdot2^4+\frac1{10}\cdot3^4=0.$$
 | `summary.md` | Автоматически формируемая сводка |
 | `.gitignore` | Исключения для временных файлов и окружения |
 
-## Проверка
 
-```bash
-python -m unittest test_methods -v
-```
 
-Проверяются заданные шаги, точность на полиномах, порядки сходимости на $e^x$,
-аналитические производные и наличие конечных неотрицательных ошибок.
-
-## Загрузка на GitHub
-
-1. Распакуйте архив проекта.
-2. Создайте на GitHub пустой репозиторий, например `numerical-differentiation-lab`.
-3. Через **uploading an existing file** или **Add file → Upload files**
-   загрузите содержимое папки проекта, положив все файлы в корень репозитория.
-4. В корне репозитория должны оказаться `main.py`, `README.md`, `requirements.txt`,
-   `test_methods.py`, пять PNG, пять CSV и `summary.md`.
-5. Не загружайте `.venv` и `__pycache__`. Все файлы можно выбрать вместе:
-   README ссылается на графики в корне.
-
-Альтернатива через Git (в папке проекта):
-
-```bash
-git init
-git add .
-git commit -m "Add numerical differentiation lab"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/numerical-differentiation-lab.git
-git push -u origin main
-```
-
-Замените `YOUR_USERNAME` на свой логин. Команды рассчитаны на новый пустой
-репозиторий; авторизация GitHub и установленный Git нужны только для загрузки.
